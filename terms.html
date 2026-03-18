@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service – Taleya</title>
+  <meta name="description" content="Taleya Terms of Service – Subscription terms, usage policy, and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --coral:  #FF6B6B;
+      --yellow: #FFD93D;
+      --teal:   #4ECDC4;
+      --navy:   #1E1B4B;
+      --cream:  #FFFBF0;
+      --text:   #2D2A4A;
+      --muted:  #7C7A9A;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.25rem 2rem;
+      background: rgba(255,251,240,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 2px solid rgba(255,107,107,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .logo {
+      font-family: 'Fredoka One', cursive;
+      font-size: 1.75rem;
+      color: var(--coral);
+      text-decoration: none;
+    }
+    .logo span { color: var(--teal); }
+    nav a.nav-link {
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--muted);
+      text-decoration: none;
+      margin-left: 1.5rem;
+      transition: color 0.2s;
+    }
+    nav a.nav-link:hover { color: var(--coral); }
+
+    .hero-strip {
+      background: var(--teal);
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .hero-strip h1 {
+      font-family: 'Fredoka One', cursive;
+      font-size: clamp(2rem, 5vw, 3rem);
+      margin-bottom: 0.5rem;
+    }
+    .hero-strip p {
+      font-size: 1rem;
+      opacity: 0.9;
+      font-weight: 600;
+    }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 3rem 2rem 5rem;
+    }
+
+    .updated {
+      background: var(--yellow);
+      color: var(--navy);
+      font-weight: 800;
+      font-size: 0.85rem;
+      padding: 0.5rem 1.2rem;
+      border-radius: 99px;
+      display: inline-block;
+      margin-bottom: 2.5rem;
+    }
+
+    .intro-box {
+      background: white;
+      border: 2.5px solid var(--coral);
+      border-radius: 20px;
+      padding: 1.75rem 2rem;
+      margin-bottom: 2.5rem;
+      font-size: 1rem;
+      line-height: 1.7;
+      font-weight: 600;
+    }
+
+    section.policy-section {
+      margin-bottom: 2.5rem;
+      background: white;
+      border-radius: 20px;
+      padding: 1.75rem 2rem;
+      border-left: 5px solid var(--teal);
+    }
+    section.policy-section:nth-child(even) {
+      border-left-color: var(--coral);
+    }
+
+    h2 {
+      font-family: 'Fredoka One', cursive;
+      font-size: 1.4rem;
+      color: var(--navy);
+      margin-bottom: 1rem;
+    }
+
+    p { line-height: 1.75; font-size: 0.97rem; color: var(--text); margin-bottom: 0.85rem; font-weight: 600; }
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      padding-left: 1.5rem;
+      margin-bottom: 0.85rem;
+    }
+    ul li {
+      line-height: 1.75;
+      font-size: 0.97rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 0.4rem;
+    }
+
+    .pricing-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .pricing-table th {
+      background: var(--navy);
+      color: white;
+      font-family: 'Fredoka One', cursive;
+      font-size: 1rem;
+      padding: 0.75rem 1rem;
+      text-align: left;
+    }
+    .pricing-table td {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid #f0eee8;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .pricing-table tr:nth-child(even) td { background: #fafaf7; }
+    .pricing-table tr:last-child td { border-bottom: none; }
+
+    a { color: var(--coral); font-weight: 700; }
+
+    footer {
+      background: var(--navy);
+      color: rgba(255,255,255,0.5);
+      text-align: center;
+      padding: 2.5rem 2rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+    footer a { color: var(--yellow); text-decoration: none; margin: 0 0.75rem; }
+    footer .footer-logo {
+      font-family: 'Fredoka One', cursive;
+      font-size: 1.5rem;
+      color: white;
+      display: block;
+      margin-bottom: 1rem;
+    }
+    footer .footer-logo span { color: var(--coral); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="logo">Tale<span>ya</span></a>
+  <div>
+    <a href="/privacy.html" class="nav-link">Privacy Policy</a>
+    <a href="/terms.html" class="nav-link">Terms</a>
+  </div>
+</nav>
+
+<div class="hero-strip">
+  <h1>📋 Terms of Service</h1>
+  <p>Please read these terms before using Taleya.</p>
+</div>
+
+<div class="container">
+  <div class="updated">Last updated: March 2026</div>
+
+  <div class="intro-box">
+    These Terms of Service ("Terms") govern your use of the Taleya mobile application ("App"), operated by Zamopia. By downloading or using the App, you agree to these Terms. If you are a parent or guardian permitting a child to use the App, you agree to these Terms on their behalf.
+  </div>
+
+  <section class="policy-section">
+    <h2>1. About Taleya</h2>
+    <p>Taleya is a children's entertainment and education app offering illustrated stories and songs for children ages 3–8. The App is intended to be used by children under the direct supervision of a parent or guardian.</p>
+  </section>
+
+  <section class="policy-section">
+    <h2>2. Eligibility & Parental Consent</h2>
+    <p>Taleya is designed for children under 13. By allowing your child to use the App, you (the parent or guardian) represent that you have reviewed and consented to these Terms.</p>
+    <p>Account registration is not required to use the App. All purchases and subscription management are handled through Apple's App Store, which includes parental controls and Ask to Buy features for Family Sharing.</p>
+  </section>
+
+  <section class="policy-section">
+    <h2>3. Subscriptions & Pricing</h2>
+    <p>Taleya offers the following subscription plans:</p>
+    <table class="pricing-table">
+      <tr>
+        <th>Plan</th>
+        <th>Price</th>
+        <th>Billing</th>
+      </tr>
+      <tr>
+        <td>Monthly</td>
+        <td>$4.99</td>
+        <td>Every month</td>
+      </tr>
+      <tr>
+        <td>Annual</td>
+        <td>$29.99</td>
+        <td>Once per year (~$2.50/mo)</td>
+      </tr>
+    </table>
+    <p>A limited selection of free content is available without a subscription. All prices are in USD and may vary by region based on App Store local pricing.</p>
+    <p><strong>Free content:</strong> A selection of stories and songs is available at no cost to allow families to try the app before subscribing.</p>
+  </section>
+
+  <section class="policy-section">
+    <h2>4. Billing & Auto-Renewal</h2>
+    <p>Subscriptions are billed through your Apple ID account. Payment is charged to your iTunes Account at confirmation of purchase.</p>
+    <ul>
+      <li>Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current period.</li>
+      <li>Your account will be charged for renewal within 24 hours prior to the end of the current period.</li>
+      <li>You can manage and cancel subscriptions in your App Store account settings at any time.</li>
+      <li>No refunds are provided for partial subscription periods, except as required by applicable law.</li>
+    </ul>
+  </section>
+
+  <section class="policy-section">
+    <h2>5. Cancellation</h2>
+    <p>You may cancel your subscription at any time through your Apple ID account settings. Cancellation takes effect at the end of the current billing period. You will continue to have access to premium content until that date.</p>
+    <p>To cancel: <strong>Settings → [Your Name] → Subscriptions → Taleya → Cancel Subscription</strong></p>
+  </section>
+
+  <section class="policy-section">
+    <h2>6. Content & Intellectual Property</h2>
+    <p>All content in the App — including stories, illustrations, songs, characters, and artwork — is owned by Zamopia or its licensors and is protected by copyright and other intellectual property laws.</p>
+    <p>You may not reproduce, distribute, modify, or create derivative works of any App content without our prior written permission.</p>
+    <p>Your subscription grants you a personal, non-transferable, non-exclusive license to access and enjoy the content within the App for personal, non-commercial use.</p>
+  </section>
+
+  <section class="policy-section">
+    <h2>7. Acceptable Use</h2>
+    <p>You agree not to:</p>
+    <ul>
+      <li>Use the App for any unlawful purpose</li>
+      <li>Attempt to copy, reverse-engineer, or extract content from the App</li>
+      <li>Share subscription credentials with others outside your household</li>
+      <li>Attempt to circumvent any content protection measures</li>
+    </ul>
+  </section>
+
+  <section class="policy-section">
+    <h2>8. Disclaimer of Warranties</h2>
+    <p>The App is provided "as is" without warranties of any kind, express or implied. We do not warrant that the App will be uninterrupted, error-free, or free of viruses or other harmful components.</p>
+    <p>We reserve the right to modify, suspend, or discontinue any aspect of the App at any time with reasonable notice where possible.</p>
+  </section>
+
+  <section class="policy-section">
+    <h2>9. Limitation of Liability</h2>
+    <p>To the maximum extent permitted by applicable law, Zamopia shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the App. Our total liability to you shall not exceed the amount you paid for the subscription in the past 12 months.</p>
+  </section>
+
+  <section class="policy-section">
+    <h2>10. Changes to Terms</h2>
+    <p>We may update these Terms from time to time. We will notify you of significant changes by updating the "Last updated" date. Continued use of the App after changes constitutes acceptance of the new Terms.</p>
+  </section>
+
+  <section class="policy-section">
+    <h2>11. Governing Law</h2>
+    <p>These Terms are governed by and construed in accordance with applicable law. Any disputes shall be resolved through binding arbitration or in courts of competent jurisdiction.</p>
+  </section>
+
+  <section class="policy-section">
+    <h2>12. Contact</h2>
+    <p>For any questions about these Terms, please contact us:</p>
+    <ul>
+      <li>Email: <a href="mailto:hello@taleya.app">hello@taleya.app</a></li>
+      <li>Website: <a href="https://taleya.app">taleya.app</a></li>
+    </ul>
+  </section>
+</div>
+
+<footer>
+  <span class="footer-logo">Tale<span>ya</span></span>
+  <p>
+    <a href="/privacy.html">Privacy Policy</a>
+    <a href="/terms.html">Terms of Service</a>
+    <a href="mailto:hello@taleya.app">Contact</a>
+  </p>
+  <p style="margin-top:1rem;">© 2026 Taleya. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
