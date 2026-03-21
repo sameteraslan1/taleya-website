@@ -7,72 +7,87 @@
   <meta name="description" content="Taleya Privacy Policy – COPPA compliant. We are committed to protecting children's privacy." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --coral:  #FF6B6B;
-      --yellow: #FFD93D;
-      --teal:   #4ECDC4;
-      --navy:   #1E1B4B;
-      --cream:  #FFFBF0;
-      --text:   #2D2A4A;
-      --muted:  #7C7A9A;
+      --lavender:       #C9B8F0;
+      --lavender-light: #E3D4FA;
+      --soft-blue:      #A8D8F0;
+      --soft-green:     #B0D9C0;
+      --peach:          #F0C4B8;
+      --bg-start:       #FFFDF8;
+      --bg-end:         #FFE8D4;
+      --text:           #1A1A1A;
+      --muted:          #999999;
+      --white:          #ffffff;
+      --stroke:         rgba(0,0,0,0.7);
+      --shadow:         rgba(0,0,0,0.7);
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      font-family: 'Nunito', sans-serif;
-      background: var(--cream);
+      font-family: 'Fredoka', sans-serif;
+      font-weight: 400;
+      background: linear-gradient(160deg, var(--bg-start) 0%, var(--bg-end) 100%);
+      background-attachment: fixed;
       color: var(--text);
     }
 
+    /* ── NAV ── */
     nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 1.25rem 2rem;
-      background: rgba(255,251,240,0.95);
+      background: rgba(255, 253, 248, 0.92);
       backdrop-filter: blur(12px);
-      border-bottom: 2px solid rgba(255,107,107,0.1);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(0,0,0,0.08);
       position: sticky;
       top: 0;
       z-index: 100;
     }
     .logo {
-      font-family: 'Fredoka One', cursive;
+      font-family: 'Fredoka', sans-serif;
+      font-weight: 700;
       font-size: 1.75rem;
-      color: var(--coral);
+      color: var(--text);
       text-decoration: none;
     }
-    .logo span { color: var(--teal); }
+    .logo span { color: var(--lavender); }
     nav a.nav-link {
-      font-weight: 700;
-      font-size: 0.9rem;
+      font-weight: 600;
+      font-size: 0.95rem;
       color: var(--muted);
       text-decoration: none;
       margin-left: 1.5rem;
-      transition: color 0.2s;
+      transition: color 0.15s;
     }
-    nav a.nav-link:hover { color: var(--coral); }
+    nav a.nav-link:hover { color: var(--text); }
 
+    /* ── HERO STRIP ── */
     .hero-strip {
-      background: var(--coral);
-      color: white;
-      padding: 3rem 2rem;
+      background: var(--soft-blue);
+      border-bottom: 1.5px solid var(--stroke);
+      color: var(--text);
+      padding: 3.5rem 2rem;
       text-align: center;
     }
     .hero-strip h1 {
-      font-family: 'Fredoka One', cursive;
+      font-family: 'Fredoka', sans-serif;
+      font-weight: 700;
       font-size: clamp(2rem, 5vw, 3rem);
       margin-bottom: 0.5rem;
     }
     .hero-strip p {
+      font-family: 'Fredoka', sans-serif;
+      font-weight: 400;
       font-size: 1rem;
-      opacity: 0.85;
-      font-weight: 600;
+      color: rgba(26,26,26,0.55);
     }
 
+    /* ── CONTENT ── */
     .container {
       max-width: 780px;
       margin: 0 auto;
@@ -80,47 +95,58 @@
     }
 
     .updated {
-      background: var(--yellow);
-      color: var(--navy);
-      font-weight: 800;
-      font-size: 0.85rem;
-      padding: 0.5rem 1.2rem;
-      border-radius: 99px;
       display: inline-block;
-      margin-bottom: 2.5rem;
+      background: var(--soft-blue);
+      color: var(--text);
+      font-family: 'Fredoka', sans-serif;
+      font-weight: 600;
+      font-size: 0.85rem;
+      padding: 0.45rem 1.1rem;
+      border-radius: 99px;
+      border: 1.5px solid var(--stroke);
+      box-shadow: 2px 2px 0 var(--shadow);
+      margin-bottom: 2rem;
     }
 
     .intro-box {
-      background: white;
-      border: 2.5px solid var(--teal);
-      border-radius: 20px;
+      background: var(--soft-blue);
+      border: 1.5px solid var(--stroke);
+      border-radius: 18px;
+      box-shadow: 3px 3px 0 var(--shadow);
       padding: 1.75rem 2rem;
-      margin-bottom: 2.5rem;
+      margin-bottom: 2rem;
+      font-family: 'Fredoka', sans-serif;
       font-size: 1rem;
-      line-height: 1.7;
-      font-weight: 600;
+      font-weight: 400;
+      line-height: 1.65;
       color: var(--text);
     }
 
     section.policy-section {
-      margin-bottom: 2.5rem;
-      background: white;
-      border-radius: 20px;
+      margin-bottom: 1.5rem;
+      background: var(--white);
+      border-radius: 18px;
       padding: 1.75rem 2rem;
-      border-left: 5px solid var(--coral);
-    }
-    section.policy-section:nth-child(even) {
-      border-left-color: var(--teal);
+      border: 1.5px solid var(--stroke);
+      box-shadow: 3px 3px 0 var(--shadow);
     }
 
     h2 {
-      font-family: 'Fredoka One', cursive;
-      font-size: 1.4rem;
-      color: var(--navy);
-      margin-bottom: 1rem;
+      font-family: 'Fredoka', sans-serif;
+      font-weight: 700;
+      font-size: 1.3rem;
+      color: var(--text);
+      margin-bottom: 0.85rem;
     }
 
-    p { line-height: 1.75; font-size: 0.97rem; color: var(--text); margin-bottom: 0.85rem; font-weight: 600; }
+    p {
+      font-family: 'Fredoka', sans-serif;
+      font-weight: 400;
+      line-height: 1.7;
+      font-size: 0.97rem;
+      color: var(--text);
+      margin-bottom: 0.85rem;
+    }
     p:last-child { margin-bottom: 0; }
 
     ul {
@@ -128,32 +154,50 @@
       margin-bottom: 0.85rem;
     }
     ul li {
-      line-height: 1.75;
+      font-family: 'Fredoka', sans-serif;
+      font-weight: 400;
+      line-height: 1.7;
       font-size: 0.97rem;
-      font-weight: 600;
       color: var(--text);
       margin-bottom: 0.4rem;
     }
 
-    a { color: var(--coral); font-weight: 700; }
+    strong { font-weight: 600; }
 
+    a { color: var(--text); font-weight: 600; }
+
+    /* ── FOOTER ── */
     footer {
-      background: var(--navy);
-      color: rgba(255,255,255,0.5);
+      background: var(--text);
+      color: rgba(255,255,255,0.45);
       text-align: center;
-      padding: 2.5rem 2rem;
-      font-size: 0.9rem;
+      padding: 3rem 2rem;
+      font-family: 'Fredoka', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 400;
+    }
+    footer a {
+      color: var(--lavender-light);
+      text-decoration: none;
+      margin: 0 0.75rem;
       font-weight: 600;
     }
-    footer a { color: var(--yellow); text-decoration: none; margin: 0 0.75rem; }
+    footer a:hover { text-decoration: underline; }
     footer .footer-logo {
-      font-family: 'Fredoka One', cursive;
-      font-size: 1.5rem;
+      font-family: 'Fredoka', sans-serif;
+      font-weight: 700;
+      font-size: 1.6rem;
       color: white;
       display: block;
       margin-bottom: 1rem;
     }
-    footer .footer-logo span { color: var(--coral); }
+    footer .footer-logo span { color: var(--lavender); }
+    footer .footer-links { margin-bottom: 1rem; }
+
+    @media (max-width: 600px) {
+      nav { padding: 1rem 1.25rem; }
+      .container { padding: 2rem 1.25rem 4rem; }
+    }
   </style>
 </head>
 <body>
@@ -263,12 +307,12 @@
 
 <footer>
   <span class="footer-logo">Tale<span>ya</span></span>
-  <p>
+  <div class="footer-links">
     <a href="/privacy.html">Privacy Policy</a>
     <a href="/terms.html">Terms of Service</a>
     <a href="mailto:hello@taleya.app">Contact</a>
-  </p>
-  <p style="margin-top:1rem;">© 2026 Taleya. All rights reserved.</p>
+  </div>
+  <p>© 2026 Taleya. All rights reserved.</p>
 </footer>
 
 </body>
