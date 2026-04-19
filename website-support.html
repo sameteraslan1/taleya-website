@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support – Taleya</title>
+  <meta name="description" content="Need help with Taleya? Contact us for support, billing questions, or feedback." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --lavender:       #C9B8F0;
+      --lavender-light: #E3D4FA;
+      --soft-blue:      #A8D8F0;
+      --soft-green:     #B0D9C0;
+      --peach:          #F0C4B8;
+      --bg-start:       #FFFDF8;
+      --bg-end:         #FFE8D4;
+      --text:           #1A1A1A;
+      --muted:          #999999;
+      --white:          #ffffff;
+      --stroke:         rgba(0,0,0,0.7);
+      --shadow:         rgba(0,0,0,0.7);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Fredoka', sans-serif;
+      font-weight: 400;
+      background: linear-gradient(160deg, var(--bg-start) 0%, var(--bg-end) 100%);
+      background-attachment: fixed;
+      color: var(--text);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.25rem 2rem;
+      background: rgba(255, 253, 248, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .logo {
+      font-family: 'Fredoka', sans-serif;
+      font-weight: 700;
+      font-size: 1.75rem;
+      color: var(--text);
+      text-decoration: none;
+    }
+    .logo span { color: var(--lavender); }
+    nav a.nav-link {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--muted);
+      text-decoration: none;
+      margin-left: 1.5rem;
+      transition: color 0.15s;
+    }
+    nav a.nav-link:hover { color: var(--text); }
+
+    .hero-strip {
+      background: var(--lavender-light);
+      border-bottom: 1.5px solid var(--stroke);
+      color: var(--text);
+      padding: 3.5rem 2rem;
+      text-align: center;
+    }
+    .hero-strip h1 {
+      font-family: 'Fredoka', sans-serif;
+      font-weight: 700;
+      font-size: clamp(2rem, 5vw, 3rem);
+      margin-bottom: 0.5rem;
+    }
+    .hero-strip p {
+      font-family: 'Fredoka', sans-serif;
+      font-weight: 400;
+      font-size: 1rem;
+      color: rgba(26,26,26,0.55);
+    }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 3rem 2rem 5rem;
+    }
+
+    .contact-card {
+      background: var(--lavender-light);
+      border: 1.5px solid var(--stroke);
+      border-radius: 18px;
+      box-shadow: 3px 3px 0 var(--shadow);
+      padding: 2.25rem 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .contact-card h2 {
+      font-family: 'Fredoka', sans-serif;
+      font-weight: 700;
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+    .contact-card p {
+      font-size: 1rem;
+      line-height: 1.65;
+      margin-bottom: 1.25rem;
+      color: var(--text);
+    }
+    .mail-button {
+      display: inline-block;
+      background: var(--text);
+      color: var(--white);
+      font-family: 'Fredoka', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 0.8rem 1.75rem;
+      border-radius: 99px;
+      border: 1.5px solid var(--stroke);
+      box-shadow: 3px 3px 0 var(--shadow);
+      text-decoration: none;
+      transition: transform 0.1s;
+    }
+    .mail-button:hover { transform: translate(-1px, -1px); box-shadow: 4px 4px 0 var(--shadow); }
+    .mail-button:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--shadow); }
+
+    section.policy-section {
+      margin-bottom: 1.5rem;
+      background: var(--white);
+      border-radius: 18px;
+      padding: 1.75rem 2rem;
+      border: 1.5px solid var(--stroke);
+      box-shadow: 3px 3px 0 var(--shadow);
+    }
+    h2 {
+      font-family: 'Fredoka', sans-serif;
+      font-weight: 700;
+      font-size: 1.3rem;
+      color: var(--text);
+      margin-bottom: 0.85rem;
+    }
+    p {
+      font-family: 'Fredoka', sans-serif;
+      font-weight: 400;
+      line-height: 1.7;
+      font-size: 0.97rem;
+      color: var(--text);
+      margin-bottom: 0.85rem;
+    }
+    p:last-child { margin-bottom: 0; }
+    ul {
+      padding-left: 1.5rem;
+      margin-bottom: 0.85rem;
+    }
+    ul li {
+      font-family: 'Fredoka', sans-serif;
+      font-weight: 400;
+      line-height: 1.7;
+      font-size: 0.97rem;
+      color: var(--text);
+      margin-bottom: 0.4rem;
+    }
+    strong { font-weight: 600; }
+    a { color: var(--text); font-weight: 600; }
+
+    footer {
+      background: var(--text);
+      color: rgba(255,255,255,0.45);
+      text-align: center;
+      padding: 3rem 2rem;
+      font-family: 'Fredoka', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 400;
+    }
+    footer a {
+      color: var(--lavender-light);
+      text-decoration: none;
+      margin: 0 0.75rem;
+      font-weight: 600;
+    }
+    footer a:hover { text-decoration: underline; }
+    footer .footer-logo {
+      font-family: 'Fredoka', sans-serif;
+      font-weight: 700;
+      font-size: 1.6rem;
+      color: white;
+      display: block;
+      margin-bottom: 1rem;
+    }
+    footer .footer-logo span { color: var(--lavender); }
+    footer .footer-links { margin-bottom: 1rem; }
+
+    @media (max-width: 600px) {
+      nav { padding: 1rem 1.25rem; }
+      .container { padding: 2rem 1.25rem 4rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="logo">Tale<span>ya</span></a>
+  <div>
+    <a href="/privacy.html" class="nav-link">Privacy Policy</a>
+    <a href="/terms.html" class="nav-link">Terms</a>
+  </div>
+</nav>
+
+<div class="hero-strip">
+  <h1>💌 Support</h1>
+  <p>We're here to help — usually within 2 business days.</p>
+</div>
+
+<div class="container">
+
+  <div class="contact-card">
+    <h2>Get in touch</h2>
+    <p>Questions, feedback, or a billing issue? Drop us a line and a real human will get back to you.</p>
+    <a href="mailto:hello@taleya.app?subject=Taleya%20Support" class="mail-button">hello@taleya.app</a>
+  </div>
+
+  <section class="policy-section">
+    <h2>Frequently asked</h2>
+
+    <p><strong>How do I cancel my subscription?</strong></p>
+    <p>Subscriptions are managed through your Apple ID. Go to <strong>iPhone Settings → [Your Name] → Subscriptions → Taleya → Cancel Subscription</strong>. Cancellation takes effect at the end of the current billing period.</p>
+
+    <p><strong>How do I request a refund?</strong></p>
+    <p>Refunds are handled by Apple. Visit <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>, sign in with your Apple ID, and request a refund for your most recent Taleya charge.</p>
+
+    <p><strong>I restored my subscription but premium content is still locked.</strong></p>
+    <p>Open the app → tap ⚙️ Settings → pass the parental gate → tap <strong>Restore Purchases</strong>. If the issue persists, email us with your Apple ID email and we'll help manually.</p>
+
+    <p><strong>The app is in the wrong language.</strong></p>
+    <p>Taleya has two separate languages: the <em>app interface</em> follows your iPhone's system language, and the <em>story/song content</em> is chosen in ⚙️ Settings → Content Language.</p>
+
+    <p><strong>Audio isn't playing.</strong></p>
+    <p>Check that your iPhone isn't muted (silent switch) and that volume is turned up. If the story audio starts then stops, another app may have taken over audio playback — reopen Taleya and tap play again.</p>
+
+    <p><strong>My child's data — what do you collect?</strong></p>
+    <p>Nothing personal. No names, no emails, no accounts. See our <a href="/privacy.html">Privacy Policy</a> for the full picture.</p>
+  </section>
+
+  <section class="policy-section">
+    <h2>When you email us</h2>
+    <p>To help us respond faster, please include:</p>
+    <ul>
+      <li>Your iPhone/iPad model and iOS version</li>
+      <li>The Taleya app version (Settings → About)</li>
+      <li>A short description of what happened</li>
+      <li>A screenshot, if possible</li>
+    </ul>
+    <p>If you email us from inside the app (⚙️ Settings → Contact Support), this info is filled in for you automatically.</p>
+  </section>
+
+</div>
+
+<footer>
+  <span class="footer-logo">Tale<span>ya</span></span>
+  <div class="footer-links">
+    <a href="/privacy.html">Privacy Policy</a>
+    <a href="/terms.html">Terms of Service</a>
+    <a href="mailto:hello@taleya.app">Contact</a>
+  </div>
+  <p>© 2026 Taleya. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
