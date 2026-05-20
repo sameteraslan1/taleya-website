@@ -3,91 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy – Taleya</title>
-  <meta name="description" content="Taleya Privacy Policy – COPPA compliant. We are committed to protecting children's privacy." />
+  <title>Privacy Policy - Taleya</title>
+  <meta name="description" content="Taleya Privacy Policy - children's privacy, COPPA, subscriptions, analytics, and data practices." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --lavender:       #C9B8F0;
+      --lavender: #C9B8F0;
       --lavender-light: #E3D4FA;
-      --soft-blue:      #A8D8F0;
-      --soft-green:     #B0D9C0;
-      --peach:          #F0C4B8;
-      --bg-start:       #FFFDF8;
-      --bg-end:         #FFE8D4;
-      --text:           #1A1A1A;
-      --muted:          #999999;
-      --white:          #ffffff;
-      --stroke:         rgba(0,0,0,0.7);
-      --shadow:         rgba(0,0,0,0.7);
+      --soft-blue: #A8D8F0;
+      --bg-start: #FFFDF8;
+      --bg-end: #FFE8D4;
+      --text: #1A1A1A;
+      --muted: #777777;
+      --white: #ffffff;
+      --stroke: rgba(0,0,0,0.7);
+      --shadow: rgba(0,0,0,0.7);
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       font-family: 'Fredoka', sans-serif;
-      font-weight: 400;
       background: linear-gradient(160deg, var(--bg-start) 0%, var(--bg-end) 100%);
       background-attachment: fixed;
       color: var(--text);
     }
 
-    /* ── NAV ── */
     nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 1.25rem 2rem;
       background: rgba(255, 253, 248, 0.92);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
       border-bottom: 1px solid rgba(0,0,0,0.08);
       position: sticky;
       top: 0;
       z-index: 100;
     }
+
     .logo {
-      font-family: 'Fredoka', sans-serif;
       font-weight: 700;
       font-size: 1.75rem;
       color: var(--text);
       text-decoration: none;
     }
+
     .logo span { color: var(--lavender); }
+
     nav a.nav-link {
       font-weight: 600;
       font-size: 0.95rem;
       color: var(--muted);
       text-decoration: none;
       margin-left: 1.5rem;
-      transition: color 0.15s;
     }
-    nav a.nav-link:hover { color: var(--text); }
 
-    /* ── HERO STRIP ── */
     .hero-strip {
       background: var(--soft-blue);
       border-bottom: 1.5px solid var(--stroke);
-      color: var(--text);
       padding: 3.5rem 2rem;
       text-align: center;
     }
+
     .hero-strip h1 {
-      font-family: 'Fredoka', sans-serif;
       font-weight: 700;
       font-size: clamp(2rem, 5vw, 3rem);
       margin-bottom: 0.5rem;
     }
+
     .hero-strip p {
-      font-family: 'Fredoka', sans-serif;
-      font-weight: 400;
       font-size: 1rem;
-      color: rgba(26,26,26,0.55);
+      color: rgba(26,26,26,0.65);
     }
 
-    /* ── CONTENT ── */
     .container {
       max-width: 780px;
       margin: 0 auto;
@@ -97,8 +87,6 @@
     .updated {
       display: inline-block;
       background: var(--soft-blue);
-      color: var(--text);
-      font-family: 'Fredoka', sans-serif;
       font-weight: 600;
       font-size: 0.85rem;
       padding: 0.45rem 1.1rem;
@@ -108,95 +96,79 @@
       margin-bottom: 2rem;
     }
 
-    .intro-box {
-      background: var(--soft-blue);
+    .intro-box,
+    section.policy-section {
       border: 1.5px solid var(--stroke);
       border-radius: 18px;
       box-shadow: 3px 3px 0 var(--shadow);
       padding: 1.75rem 2rem;
-      margin-bottom: 2rem;
-      font-family: 'Fredoka', sans-serif;
-      font-size: 1rem;
-      font-weight: 400;
+      margin-bottom: 1.5rem;
       line-height: 1.65;
-      color: var(--text);
     }
 
-    section.policy-section {
-      margin-bottom: 1.5rem;
-      background: var(--white);
-      border-radius: 18px;
-      padding: 1.75rem 2rem;
-      border: 1.5px solid var(--stroke);
-      box-shadow: 3px 3px 0 var(--shadow);
-    }
+    .intro-box { background: var(--soft-blue); }
+    section.policy-section { background: var(--white); }
 
     h2 {
-      font-family: 'Fredoka', sans-serif;
       font-weight: 700;
       font-size: 1.3rem;
-      color: var(--text);
       margin-bottom: 0.85rem;
     }
 
     p {
-      font-family: 'Fredoka', sans-serif;
-      font-weight: 400;
       line-height: 1.7;
       font-size: 0.97rem;
-      color: var(--text);
       margin-bottom: 0.85rem;
     }
+
     p:last-child { margin-bottom: 0; }
 
     ul {
       padding-left: 1.5rem;
       margin-bottom: 0.85rem;
     }
-    ul li {
-      font-family: 'Fredoka', sans-serif;
-      font-weight: 400;
+
+    li {
       line-height: 1.7;
       font-size: 0.97rem;
-      color: var(--text);
       margin-bottom: 0.4rem;
     }
 
     strong { font-weight: 600; }
-
     a { color: var(--text); font-weight: 600; }
 
-    /* ── FOOTER ── */
     footer {
       background: var(--text);
-      color: rgba(255,255,255,0.45);
+      color: rgba(255,255,255,0.55);
       text-align: center;
       padding: 3rem 2rem;
-      font-family: 'Fredoka', sans-serif;
       font-size: 0.95rem;
-      font-weight: 400;
     }
+
     footer a {
       color: var(--lavender-light);
       text-decoration: none;
       margin: 0 0.75rem;
       font-weight: 600;
     }
-    footer a:hover { text-decoration: underline; }
+
     footer .footer-logo {
-      font-family: 'Fredoka', sans-serif;
       font-weight: 700;
       font-size: 1.6rem;
       color: white;
       display: block;
       margin-bottom: 1rem;
     }
+
     footer .footer-logo span { color: var(--lavender); }
     footer .footer-links { margin-bottom: 1rem; }
 
     @media (max-width: 600px) {
       nav { padding: 1rem 1.25rem; }
+      nav a.nav-link { margin-left: 1rem; }
       .container { padding: 2rem 1.25rem 4rem; }
+      .intro-box,
+      section.policy-section { padding: 1.4rem 1.5rem; }
     }
   </style>
 </head>
@@ -211,93 +183,94 @@
 </nav>
 
 <div class="hero-strip">
-  <h1>🔒 Privacy Policy</h1>
-  <p>We take children's privacy seriously — here's exactly what we do (and don't) collect.</p>
+  <h1>Privacy Policy</h1>
+  <p>We take children's privacy seriously. Here is what we do and do not collect.</p>
 </div>
 
 <div class="container">
-  <div class="updated">Last updated: March 2026</div>
+  <div class="updated">Last updated: May 21, 2026</div>
 
   <div class="intro-box">
-    Taleya is a children's app designed for kids ages 3–8. We are fully committed to protecting the privacy of children. This Privacy Policy explains our practices in plain language. <strong>The short version: we do not collect personal information from children.</strong>
+    Taleya is a children's app designed for kids ages 3-8. We are committed to protecting children's privacy. This Privacy Policy explains our practices in plain language. <strong>The short version: we do not collect personal information from children for advertising or tracking.</strong>
   </div>
 
   <section class="policy-section">
     <h2>1. Who We Are</h2>
-    <p>Taleya is operated by Zamopia. You can contact us at <a href="mailto:hello@taleya.app">hello@taleya.app</a>.</p>
-    <p>This app is directed to children under the age of 13 and is subject to the Children's Online Privacy Protection Act (COPPA) in the United States and applicable children's privacy laws in other jurisdictions.</p>
+    <p>Taleya is operated by Abdulsamed Eraslan under the Zamopia brand. You can contact us at <a href="mailto:hello@taleya.app">hello@taleya.app</a>.</p>
+    <p>This app is directed to children and families and is designed for kids ages 3-8. We follow the Children's Online Privacy Protection Act (COPPA) in the United States and applicable children's privacy laws in other jurisdictions.</p>
   </section>
 
   <section class="policy-section">
-    <h2>2. Information We Do NOT Collect</h2>
+    <h2>2. Information We Do Not Collect</h2>
     <p>We do <strong>not</strong> collect any of the following from children:</p>
     <ul>
       <li>Names, email addresses, or contact information</li>
-      <li>Profile photos or any user-generated content</li>
+      <li>Profile photos</li>
       <li>Location data</li>
       <li>Social network information</li>
       <li>Precise identifiers that could be used to contact a child</li>
+      <li>Child names, narration recordings, or personalization details sent to our servers</li>
     </ul>
-    <p>We do <strong>not</strong> display third-party advertisements. We do <strong>not</strong> allow in-app purchases by children without parental involvement through Apple's purchase authorization system.</p>
+    <p>We do <strong>not</strong> display third-party advertisements. We do <strong>not</strong> use children's data for behavioral advertising or tracking.</p>
   </section>
 
   <section class="policy-section">
     <h2>3. Information We Do Collect</h2>
-    <p>To improve the app experience, we collect limited, anonymous usage data:</p>
+    <p>To operate and improve Taleya, we process a limited amount of app data:</p>
     <ul>
-      <li><strong>Anonymous analytics events:</strong> Which stories and songs are opened, general navigation patterns, and app performance metrics. This data is aggregated and cannot be used to identify any individual user.</li>
-      <li><strong>Crash reports:</strong> Technical information about errors or crashes to help us fix bugs.</li>
-      <li><strong>Subscription status:</strong> Managed entirely by Apple's App Store. We receive only the entitlement status (active/inactive) — no payment details are ever shared with us.</li>
+      <li><strong>Product interaction data:</strong> Anonymous events such as which stories or songs are opened and general navigation patterns. This data is used for analytics and is not used for advertising or tracking.</li>
+      <li><strong>Crash and performance data:</strong> Technical information about crashes, errors, launch performance, and app stability to help us fix bugs and improve the app.</li>
+      <li><strong>Purchase history:</strong> Subscription and entitlement status handled through Apple and RevenueCat. We do not receive payment card details.</li>
     </ul>
-    <p>All analytics are processed in compliance with COPPA. We configure our analytics tools to operate in a child-directed mode that disables personal data collection and behavioral advertising.</p>
+    <p>Any child name, reading personalization, or parent-recorded narration used inside the app is intended to remain on the device and is not used for advertising or tracking.</p>
   </section>
 
   <section class="policy-section">
     <h2>4. Third-Party Services</h2>
-    <p>We use the following third-party services, each configured for child privacy compliance:</p>
+    <p>We use the following third-party services to operate the app:</p>
     <ul>
-      <li><strong>PostHog</strong> – Anonymous product analytics. No personal data is transmitted.</li>
-      <li><strong>RevenueCat</strong> – Subscription management. Only entitlement status is shared, not payment or personal information.</li>
-      <li><strong>Supabase</strong> – Content delivery (stories, songs). No user personal data is stored.</li>
-      <li><strong>Apple App Store</strong> – Handles all payments and purchase authorization for family sharing and parental controls.</li>
+      <li><strong>PostHog</strong> - Product analytics configured without advertising or tracking.</li>
+      <li><strong>RevenueCat</strong> - Subscription management and entitlement status.</li>
+      <li><strong>Supabase</strong> - Content delivery for stories and songs. We do not store child personal information in Supabase.</li>
+      <li><strong>Apple App Store</strong> - Handles payments, subscriptions, purchase authorization, and family controls.</li>
     </ul>
   </section>
 
   <section class="policy-section">
     <h2>5. Parental Rights</h2>
-    <p>As a parent or guardian, you have the right to:</p>
+    <p>As a parent or guardian, you may contact us to:</p>
     <ul>
-      <li>Review any information we may have collected from your child</li>
-      <li>Request deletion of any such information</li>
-      <li>Refuse further collection or use of your child's information</li>
+      <li>Ask what information we process</li>
+      <li>Request deletion of information associated with your request where applicable</li>
+      <li>Object to analytics processing where applicable</li>
     </ul>
-    <p>To exercise any of these rights, please contact us at <a href="mailto:hello@taleya.app">hello@taleya.app</a>. We will respond within 30 days.</p>
+    <p>To exercise these rights, contact us at <a href="mailto:hello@taleya.app">hello@taleya.app</a>. We will respond within a reasonable period and, where required by law, within 30 days.</p>
   </section>
 
   <section class="policy-section">
     <h2>6. Data Security</h2>
-    <p>We implement industry-standard security measures to protect the limited data we process. Content is served over encrypted connections (HTTPS/TLS). We do not store sensitive user data on our servers.</p>
+    <p>We use reasonable technical and organizational measures to protect the limited data we process. Content and app services are accessed over encrypted connections such as HTTPS/TLS.</p>
   </section>
 
   <section class="policy-section">
     <h2>7. Data Retention</h2>
-    <p>Anonymous analytics data is retained for up to 12 months for the purpose of improving the app, after which it is automatically deleted. Since we do not collect personal information from children, there is no personal data to retain or delete.</p>
+    <p>Analytics, crash, performance, and subscription-related records are retained only as long as needed to operate, maintain, and improve the app. Parent-recorded narrations and child personalization details are intended to remain on the device unless otherwise stated in the app.</p>
   </section>
 
   <section class="policy-section">
     <h2>8. International Users</h2>
-    <p>Taleya is available globally. If you are located in the European Economic Area (EEA), our legal basis for processing anonymous analytics data is our legitimate interest in improving the app. You may contact us at any time to object to this processing.</p>
-    <p>If you are located in California, this app complies with the California Consumer Privacy Act (CCPA) as applicable to children's apps.</p>
+    <p>Taleya is available globally. If you are located in the European Economic Area (EEA), our legal basis for processing limited analytics, crash, and performance data is our legitimate interest in operating and improving the app.</p>
+    <p>If you are located in California, we do not sell or share children's personal information for cross-context behavioral advertising.</p>
   </section>
 
   <section class="policy-section">
     <h2>9. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. We will notify users of significant changes by updating the "Last updated" date at the top of this page. We encourage parents to review this policy periodically.</p>
+    <p>We may update this Privacy Policy from time to time. We will show the latest update date at the top of this page. We encourage parents and guardians to review this policy periodically.</p>
   </section>
 
   <section class="policy-section">
     <h2>10. Contact Us</h2>
-    <p>If you have any questions about this Privacy Policy or our privacy practices, please contact us:</p>
+    <p>If you have questions about this Privacy Policy or our privacy practices, please contact us:</p>
     <ul>
       <li>Email: <a href="mailto:hello@taleya.app">hello@taleya.app</a></li>
       <li>Website: <a href="https://taleya.app">taleya.app</a></li>
